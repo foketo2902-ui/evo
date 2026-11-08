@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Conectando con EVO VIRAL AI…</title>
+<link rel="stylesheet" href="../../../estilo.css">
+<script>
+  // TikTok regresa aquí (https) después de que el creador autoriza. EVO corre en su propia
+  // computadora, así que esta página pasa el código, tal cual, a EVO en http://127.0.0.1:8000.
+  // EVO comprueba el «state» y cambia el código por los permisos; esta página no guarda nada.
+  var dest = "http://127.0.0.1:8000/api/oauth/tiktok/callback" + location.search;
+  location.replace(dest);
+</script>
+</head>
+<body>
+<main>
+<section>
+<h1>Conectando con EVO…</h1>
+<p>Si no pasa nada en unos segundos, asegúrate de que EVO VIRAL AI esté abierto en esta computadora y pulsa <a id="go" href="#">continuar</a>.</p>
+</section>
+</main>
+<script>document.getElementById("go").href = dest;</script>
+</body>
+</html>
